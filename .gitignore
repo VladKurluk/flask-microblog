@@ -1,4 +1,5 @@
 myvenv/
 .vscode/
+__pycache__
 app/__pycache__/*.pyc
 app/*.pyc
