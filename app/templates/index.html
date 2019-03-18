@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <!-- Условные операторы шаблонизатора  Jinja -->
+        {% if title %}
+        <title>{{ title }} - Microblog</title>
+        {% else %}
+        <title>Welcome to Microblog!</title>
+        {% endif %}
+    </head>
+
+    <body>
+        <h1>Hello, {{ user.username }}!</h1>
+        <!-- Вывод в цикле  -->
+        {% for post in posts %}
+        <div><p>{{ post.author.username }} says: <b>{{ post.body }}</b></p></div>
+        {% endfor %}
+    </body>
+</html>
